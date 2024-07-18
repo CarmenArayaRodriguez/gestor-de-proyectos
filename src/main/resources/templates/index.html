@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Saludo Personalizado</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">¡Bienvenida!</h4>
+        <p>¡Hola, <span th:text="${nombre}">Nombre</span> <span th:text="${apellido}">Apellido</span>, tienes <span th:text="${edad}">edad</span> años!</p>
+    </div>
+</div>
+</body>
+</html>
